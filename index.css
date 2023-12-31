@@ -1,0 +1,679 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* body background image */
+body {
+    background-image: url(./Kanyakumari_Sunrise.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* navigation bar design */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color:black;
+    margin: 30px 40px;
+    padding: 5px;
+    border-radius: 20px;
+    position: fixed;
+    top:10px;
+    width:95%;
+    z-index: 1;
+}
+
+.nav-bar h1 {
+    font-size: 30px;
+    margin: 5px 0px 0px 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+    margin-right: 30px;
+}
+
+.nav-links div a {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-left: 5px;
+}
+
+/* home page design */
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 280px;
+    text-align: center;
+}
+
+.home-content {
+    margin-left: 60px;
+}
+
+#home h1 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+}
+
+#home h2 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    padding: 40px 20px;
+}
+
+#home button,.home-btn{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    color: crimson;
+    transition: all 0.1s;
+}
+
+#home button:hover ,.home-btn:hover{
+    background-color: crimson;
+    color: white;
+    transform: scale(1.1);
+}
+
+.home-icons i {
+    display: block;
+    padding: 10px;
+    margin: 0px 0px 20px 70px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translatey(-30px);
+}
+
+/* about page design */
+.about{
+    text-align: center;
+    margin-top:350px;
+}
+.about h2{
+    color:white;
+    font-size: 60px;
+    text-shadow: 0px 0px 20px black;
+}
+.about-content{
+   position:absolute;
+   top:900px;
+   text-align: justify;
+   padding:20px 50px;
+}
+.about-content p{
+    text-indent: 50px;
+    font-size: 25px;
+    line-height: 2;
+}
+.about-content h3{
+    font-size: 30px;
+    padding:20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* packages design */
+#packages{
+    width:100%;
+position: absolute;
+top:900px;
+text-align: center;
+}
+#packages h1{
+    padding:30px;
+}
+#packages div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:10px;
+}
+.card{
+    width:600px;
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    text-align: justify;
+}
+.card img{
+    margin:10px 0px 30px 10px;
+    width:200px;
+    height:250px;
+    border-radius: 20px;
+}
+.card img:nth-child(1){
+    position: relative;
+    top:30px;  
+}
+.card span h2{
+font-size: 30px;
+font-weight: bold;
+padding:10px;
+text-align: center;
+}
+.card span p{
+    text-indent: 30px;
+    font-size: 20px;
+}
+
+/* form design */
+form {
+    margin:120px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      max-width: 400px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 20px;
+      background:linear-gradient(45deg, #2196f3, #e91e63);
+    }
+    .title {
+      font-size: 30px;
+     width: 100%;
+     text-align: center;
+      font-weight: bold;
+      color:white;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      color:white;
+    }
+    form div input,select{
+      width: 100%;
+      height: 30px;
+      border-radius: 8px;
+      outline: none;
+      border: 2px solid #c4c4c4;
+      padding: 0 30px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    form div {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    
+    input:focus {
+      border: 2px solid #f2796e;
+    }
+    form div i{
+      position: absolute;
+      padding:10px;
+    }
+    .failure-icon,
+  .error {
+    color: red;
+  }
+  
+  .success-icon {
+    color: green;
+  }
+  
+  .error {
+    font-size: 14.5px;
+    margin-top: 5px;
+  }
+  .success-icon,.failure-icon{
+      opacity: 0;
+      right:0;
+  }
+  #btn{
+      margin-top: 15px;
+      width: 100%;
+      height: 45px;
+      background-color: #f2796e;
+      border: 2px solid #f2796e;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.1s eas
+  }
+  /* popup box */
+ .show-btn{
+    width: 70px;
+    border: none;
+    font-size: 20px;
+    background-color: #f2796e;
+    color:white;
+    margin-top:10px;
+  }
+  .show,.close{
+    display: none;
+    font-size: 20px;
+    color:crimson;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px black;
+    width: 400px;
+    height: 100px; 
+    margin:300px auto 0px auto;
+    border-radius: 20px;
+    padding:20px;
+    position: fixed;
+    top:0;
+    left:475px;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+  }
+
+  /* contact footer */
+#contact{
+    position: relative;
+    top:1700px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+}
+#contact .media{
+    padding: 0px;
+}
+#contact .media h2{
+    padding:10px 20px;
+    color:white;
+}
+#contact .media i{
+    font-size: 30px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 15px;
+}
+#contact .media h4{
+    font-size: 30px;
+    color: white;
+}
+ h2{
+    color:white;
+    padding: 0px 0px 20px 0px;
+}
+#contact .address iframe{
+    width:250px;
+    height: 250px;
+    border-radius: 20px;
+}
+#contact form{
+    width:300px;
+    margin:80px 0px;
+}
+#contact form textarea{
+    height: 100px;
+    border-radius: 10px;
+}
+#contact form button{
+    background-color: black;
+    border-radius: 10px;
+    margin:10px;
+    font-size: 20px;
+    border: none;
+    padding:10px 5px;
+    color:white;
+}
+#contact input{
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+/* for labtop devices */
+@media all and (min-width:900px) and (max-width:1200px) {
+
+    /* navigation bar design */
+    .nav-bar h1 {
+        font-size: 20px;
+        margin: 5px 0px 0px 40px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        margin-right: 30px;
+    }
+
+    .nav-links div a {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        padding-left: 5px;
+    }
+
+    /* home desgin  */
+    .home-content {
+        margin-left: 80px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+    }
+
+    #home h2 {
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+        padding: 40px 20px;
+    }
+
+    .home-icons i {
+        display: block;
+        padding: 10px;
+        margin: 0px 0px 20px 50px;
+        font-size: 30px;
+        background-color: white;
+        border-radius: 50%;
+        transform: translatey(-30px);
+    }
+    /* packages page design */
+    #packages{
+        top:650px;
+    }
+    #packages h1{
+        padding:30px;
+    }
+    #packages div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:20px 10px 20px 20px;
+        text-align: center;
+    }
+    .card{
+        width:400px;
+        padding:20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px black;
+    }
+    .card img{
+        margin:10px 0px 30px 10px;
+        width:150px;
+    }
+
+    /* popup design */
+    .show,.close{
+        left:330px; 
+    }
+
+    /* contact */
+    #contact{
+        top:1550px;
+    }
+
+}
+
+/* for tablet device */
+@media all and (min-width:600px) and (max-width:900px) {
+    .nav-bar{
+        width:90%;
+        justify-content: center;
+    }
+    .nav-links {
+        position: fixed;
+        top: 460px;
+        width: 60%;
+        margin-right:1px;
+        justify-content: space-around;
+        background: linear-gradient(45deg, #2196f3, #e91e63);
+        border-radius: 10px;
+    }
+    .nav-links div {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links div a .text{
+        display: none;
+    }
+
+    .nav-links div i {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-links div i:hover {
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+    }
+   
+    .nav-bar h1 {
+        font-size: 30px;
+    }
+
+    /* home desgin  */
+    #home {
+        margin-top: 200px;
+    }
+
+    .home-content {
+        margin-left: 80px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+    }
+
+    #home h2 {
+        font-size: 25px;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+        padding: 40px 20px;
+    }
+
+    .home-icons i {
+        margin: 0px 0px 20px 30px;
+        font-size: 20px;
+    }
+
+    .about{
+        text-align: center;
+        margin-top:160px;
+    }
+    .about-content{
+        position:absolute;
+        top:550px;
+        text-align: justify;
+        padding:20px 50px;
+     }
+
+      /* packages page design */
+    #packages{
+        top:500px;
+    }
+    #packages div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:20px 20px 20px 20px;
+    }
+    .card img{
+        margin:10px 10px 30px 10px;
+        width:150px;
+    }
+
+    form{
+       margin-top: 120px; 
+    }
+     /* popup design */
+     .show,.close{
+        left:180px; 
+    }
+/* contact */
+    #contact{
+        top:2670px;
+    }
+
+}
+
+/* for mobile device */
+@media all and (min-width:320px) and (max-width:600px) {
+    body {
+        background-image: url(./back.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .nav-links div a .text {
+        display: none;
+    }
+
+    .nav-links div i {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links div i:hover {
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .nav-bar {
+        justify-content: center;
+        width:80%;
+    }
+
+    .nav-bar h1 {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .nav-links {
+        position: fixed;
+        bottom: 40px;
+        gap: 10px;
+        width: 90%;
+        margin-right: 0px;
+        justify-content: space-around;
+        background: linear-gradient(45deg, #2196f3, #e91e63);
+        border-radius: 20px;
+    }
+
+    #home {
+        margin-top: 130px;
+    }
+
+    .home-content {
+        margin-left: 10px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+    }
+
+    #home h2 {
+        font-size: 25px;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+        padding: 20px 10px;
+    }
+
+    .home-icons {
+        margin-top: 40px;
+    }
+
+    .home-icons i {
+        display: inline;
+        margin: 40px 10px 20px 10px;
+        font-size: 20px;
+    }
+
+    /* about page design */
+.about{
+    text-align: center;
+    margin-top:180px;
+}
+.about h2{
+    color:white;
+    font-size: 40px;
+    text-shadow: 0px 0px 20px black;
+}
+
+.about-content{
+    position:absolute;
+    top:590px;
+    text-align: justify;
+    padding:20px 20px;
+ }
+
+  /* packages page design */
+  #packages{
+    top:720px;
+}
+#packages h1{
+    padding:10px;
+}
+#packages div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:10px 10px 10px 10px;
+}
+.card{
+    width:400px;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.card img{
+   margin:10px 10px 30px 10px;
+    width:100px;
+}
+.card span h2{
+    font-size: 20px;
+    }
+    .card span p{
+        font-size: 15px;
+    }
+
+    /* form design */
+    form{
+        margin:100px 30px;
+    }
+    label{
+        font-size: 25px;
+    }
+
+    .show,.close{
+        width:300px;
+        left:10px; 
+    }
+    #contact{
+        top:2700px;
+    }
+}
